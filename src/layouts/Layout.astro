@@ -1,5 +1,6 @@
 ---
 import "@fontsource/open-sans";
+import { SEO } from "astro-seo";
 
 export interface Props {
   title: string;
@@ -16,13 +17,28 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <SEO
+      title={title}
+      description="Hi, I'm Luis. A full-stack developer from Belize."
+      openGraph={{
+        basic: {
+          type: "website",
+          title,
+          image:
+            "https://raw.githubusercontent.com/rodgetech/rodgetech.com/main/public/me.jpeg",
+        },
+      }}
+      twitter={{
+        creator: "@rodgetech",
+      }}
+    />
   </head>
   <body class="bg-neutral-900">
     <slot />
+    <style is:global>
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+    </style>
   </body>
 </html>
-<style is:global>
-  body {
-    font-family: "Open Sans", sans-serif;
-  }
-</style>
