@@ -22,23 +22,28 @@ const pinnedRepos = await fetch(
 ---
 
 <Layout title="rodgeTech - home">
-  <main class="max-w-3xl m-auto">
+  <main class="max-w-3xl m-auto px-4">
     <Header />
-    <div class="mb-16 flex gap-x-6 items-center">
+    <section
+      class="grid grid-cols-1 gap-4 auto-cols-max sm:grid-cols-[1fr_2fr] sm:gap-8 mb-12"
+    >
       <div>
-        <img src="/me.jpeg" width="680" class="rounded-md" />
+        <img src="/me.jpeg" class="rounded-md" />
       </div>
-      <div>
-        <p class="text-3xl font-bold text-white mb-3">Hi, Luis here</p>
-        <p class="text-neutral-300 leading-relaxed">
-          I'm a self-taught developer with a burning passion for all things
-          coding and tech. I like to build cool stuff through the power of code.
-          My favorite technologies right now are: <span class="text-white"
-            >React.Js, Typescript, GraphQL, and AWS.</span
-          >
-        </p>
+      <div class="flex justify-center items-center">
+        <div>
+          <p class="text-3xl font-bold text-white mb-3">Hi, Luis here</p>
+          <p class="text-neutral-300 leading-relaxed">
+            I'm a self-taught developer with a burning passion for all things
+            coding and tech. I like to build cool stuff through the power of
+            code. My favorite technologies right now are: <span
+              class="text-white">React.Js, Typescript, GraphQL, and AWS.</span
+            >
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
+
     <div>
       <h1 class="text-white text-2xl mb-4">Some stuff I've worked on</h1>
       <section
