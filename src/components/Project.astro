@@ -16,11 +16,11 @@ const { name, owner, description, stars, language } = Astro.props;
   class="hover:no-underline"
 >
   <div
-    class="h-36 flex flex-col justify-between gap-y-2 border border-neutral-700 hover:scale-105 ease-out transition-transform p-4 rounded-lg"
+    class="h-36 flex flex-col justify-between gap-y-2 bg-white/[0.03] border border-white/20 hover:scale-105 ease-out transition-transform p-4 rounded-lg"
   >
     <div class="flex flex-col gap-y-2">
-      <span class="text-xl font-medium text-cyan-500">{name}</span>
-      <p class="text-neutral-300 text-sm font-light">{description}</p>
+      <span class="text-xl font-medium text-white">{name}</span>
+      <p class="text-neutral-300 text-base font-light">{description}</p>
     </div>
     <div class="flex items-center gap-x-2 text-neutral-300">
       <div class="flex gap-x-1 items-center">
