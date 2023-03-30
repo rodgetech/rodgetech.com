@@ -9,7 +9,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "ingest": "tsx -r dotenv/config scripts/ingest-data.ts"
+    "ingest": "tsx -r dotenv/config scripts/ingest-data.ts",
+    "demo": "tsx -r dotenv/config scripts/demo-question.ts"
   },
   "dependencies": {
     "@astrojs/react": "^2.1.0",
