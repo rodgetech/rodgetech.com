@@ -1,4 +1,5 @@
 ---
+import Chat from "../components/Chat";
 import Footer from "../components/Footer.astro";
 import Project from "../components/Project.astro";
 import Layout from "../layouts/Layout.astro";
@@ -50,15 +51,19 @@ const pinnedRepos = await fetch(
       </div>
     </section>
 
+    <section class="mb-12">
+      <Chat />
+    </section>
+
     <div>
       <h1 class="text-neutral-300 text-2xl mb-4 font-bold md:text-3xl">
         Some stuff <span class="text-white">I've worked on</span>
       </h1>
       <section
-        class="grid grid-cols-1 gap-4 auto-cols-max sm:grid-cols-2 sm:gap-3"
+        class="grid grid-cols-1 gap-4 autoy-cols-max sm:grid-cols-2 sm:gap-3"
       >
         {
-          pinnedRepos.map((repo) => {
+          pinnedRepos.slice(0, 4).map((repo) => {
             return (
               <Project
                 name={repo.repo}
