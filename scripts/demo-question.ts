@@ -6,7 +6,7 @@ import { pinecone } from "../utils/pinecone-client";
 
 export async function run() {
   try {
-    const question = "what are some of your personal projects?";
+    const question = "why do you like coding?";
 
     const index = pinecone.Index(PINECONE_INDEX_NAME);
 
@@ -28,7 +28,7 @@ export async function run() {
       chat_history: [],
     });
 
-    console.log("response", response.text);
+    console.log({ response: response.text });
   } catch (error) {
     console.log(error);
   }

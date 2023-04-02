@@ -10,7 +10,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "ingest": "tsx -r dotenv/config scripts/ingest-data.ts",
-    "demo": "tsx -r dotenv/config scripts/demo-question.ts"
+    "demo": "tsx -r dotenv/config scripts/demo-question.ts",
+    "delete-namespace": "tsx -r dotenv/config scripts/delete-namespace.ts"
   },
   "dependencies": {
     "@astrojs/react": "^2.1.0",
