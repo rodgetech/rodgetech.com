@@ -23,42 +23,51 @@ const pinnedRepos = await fetch(
 
 <Layout title="rodgeTech - home">
   <main class="max-w-4xl m-auto px-4">
-    <section class="mb-8">
-      <h1 class="text-white text-4xl font-bold">
+    <section class="mb-10">
+      <h1 class="text-white text-5xl font-bold">
         Hi, Luis here. <br /> I'm a <span class="text-emerald-500"
           >Software Engineer</span
-        > from <a
+        >
+        <br />from <a
           href="https://en.wikipedia.org/wiki/Belize"
           target="_blank"
           class="underline">Belize, CA.</a
         >
       </h1>
     </section>
-    <section class="mb-12 border-b border-white/20 pb-8">
+    <section
+      class="mb-10 pb-8 bg-white/[0.03] border border-white/20 rounded-lg p-4"
+    >
       <div class="flex justify-center items-center">
         <div>
-          <h2
-            class="text-neutral-300 leading-relaxed font-medium text-xl md:text-2xl"
+          <h2 class="text-white font-black mb-4 text-3xl">About Me</h2>
+          <p
+            class="text-neutral-300 leading-relaxed font-medium text-xl md:text-xl"
           >
-            I'm a self-taught developer with a burning passion for all things
-            coding and tech. I like to build cool stuff through the power of
-            code. My favorite technologies right now are: <span
-              class="text-white"
-              >React.Js, Typescript, tRPC, AWS, and Vercel.</span
+            I'm a self-taught developer with a 🔥 burning passion for all things
+            coding and tech. I build web apps and side projects mostly using
+            Typescript and React.
+          </p>
+          <p
+            class="text-neutral-300 leading-relaxed font-medium text-xl md:text-xl mt-2"
+          >
+            My favorite technologies right now are: <span
+              class="text-white font-bold"
+              >React.Js, Typescript, tRPC, Rowy, and Vercel.</span
             >
-          </h2>
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="mb-12">
+    <!-- <section class="mb-12">
       <Chat />
-    </section>
+    </section> -->
 
     <div>
-      <h1 class="text-neutral-300 text-2xl mb-4 font-bold md:text-3xl">
-        Some stuff <span class="text-white">I've worked on</span>
-      </h1>
+      <h2 class="font-black mb-4 text-3xl text-neutral-500">
+        Some stuff I've worked on
+      </h2>
       <section
         class="grid grid-cols-1 gap-4 autoy-cols-max sm:grid-cols-2 sm:gap-3"
       >
