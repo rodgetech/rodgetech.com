@@ -3,6 +3,8 @@ import Chat from "../components/Chat";
 import Footer from "../components/Footer.astro";
 import Project from "../components/Project.astro";
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import localMeImage from "../images/me.jpeg";
 
 type PinnedRepo = {
   owner: string;
@@ -25,7 +27,7 @@ const pinnedRepos = await fetch(
   <main class="max-w-5xl m-auto px-4">
     <div class="block md:flex gap-10 mb-20">
       <div class="flex-1 mb-10 md:mb-0">
-        <img src="/me.jpeg" alt="me" class="rounded-md" />
+        <Image src={localMeImage} alt="Me" class="rounded-md"/>
       </div>
       <div class="flex-1">
         <section class="mb-10">
