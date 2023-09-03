@@ -23,34 +23,42 @@ const pinnedRepos = await fetch(
 
 <Layout title="Luis Rodriguez - home">
   <main class="max-w-5xl m-auto px-4">
-    <section class="mb-10 mt-[117px]">
-      <p class="text-white mb-10">Hey, I'm</p>
-      <h1 class="text-4xl md:text-7xl mb-10 font-bold tracking-wide">
-        <span
-          class="inline-block text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-teal-500 mb-2"
-          >Luis Rodriguez</span
-        >
-      </h1>
-    </section>
-    <section class="mb-20">
-      <div class="flex justify-center items-center">
-        <div>
-          <p class="text-white text-lg">
-            I’m a self-taught software engineer from Belize, Central America. I
-            fell in love with coding at a relatively young age and over the
-            years I’ve developed a burning passion for all things coding and
-            tech. Coding truly is my passion on and off the job. I really enjoy
-            building cool stuff for the web through the power of code. To be
-            able to conceive an idea, then being able to realize it with just a
-            computer and have it readily available to millions over the internet
-            is just one of the many reasons why I absolutely love what I do. I
-            mostly build web apps and side projects using Typescript and React.
-            These days my favorite technologies are: React.Js, Typescript, tRPC,
-            Rowy, and Vercel.
-          </p>
-        </div>
+    <div class="block md:flex gap-10 mb-20">
+      <div class="flex-1 mb-10 md:mb-0">
+        <img src="/me.jpeg" alt="me" class="rounded-md" />
       </div>
-    </section>
+      <div class="flex-1">
+        <section class="mb-10">
+          <p class="text-white mb-10">Hey, I'm</p>
+          <h1 class="text-4xl md:text-7xl mb-10 font-bold tracking-wide">
+            <span
+              class="inline-block text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-teal-500 mb-2"
+              >Luis Rodriguez</span
+            >
+          </h1>
+        </section>
+        <section>
+          <div class="flex justify-center items-center">
+            <div>
+              <p class="text-white text-lg">
+                I’m a self-taught software engineer from Belize, Central
+                America. I fell in love with coding at a relatively young age
+                and over the years I’ve developed a burning passion for all
+                things coding and tech. Coding truly is my passion on and off
+                the job. I really enjoy building cool stuff for the web through
+                the power of code. To be able to conceive an idea, then being
+                able to realize it with just a computer and have it readily
+                available to millions over the internet is just one of the many
+                reasons why I absolutely love what I do. I mostly build web apps
+                and side projects using Typescript and React. These days my
+                favorite technologies are: React.Js, Typescript, tRPC, Rowy, and
+                Vercel.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
 
     <div>
       <h2 class="mb-4 text-xl text-white font-semibold">FEATURED PROJECTS</h2>
